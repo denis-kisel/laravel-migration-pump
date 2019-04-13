@@ -1,0 +1,36 @@
+{
+    "name": "denis-kisel/laravel-migration-pump",
+    "description": "Pump for laravel migration",
+    "authors": [
+        {
+            "name": "Denis Kisel",
+            "email": "denis.kisel92@gmail.com",
+            "homepage": "http://digital-elephant.com.ua"
+        }
+    ],
+    "homepage": "https://github.com/denis-kisel/laravel-migration-pump",
+    "keywords": ["Laravel", "LaravelMigrationPump"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DenisKisel\\LaravelMigrationPump\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DenisKisel\\LaravelMigrationPump\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DenisKisel\\LaravelMigrationPump\\LaravelMigrationPumpServiceProvider"
+            ],
+            "aliases": {
+                "LaravelMigrationPump": "DenisKisel\\LaravelMigrationPump\\Facades\\LaravelMigrationPump"
+            }
+        }
+    }
+}
